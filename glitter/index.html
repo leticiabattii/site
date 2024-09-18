@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Filmes Favoritos</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: pink;
+    color: rgb(255, 84, 112);
+    padding: 20px;
+    text-align: center;
+}
+
+.filmes-lista {
+    list-style-type: none;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.filmes-lista li {
+    background-color: #f5b0cd94;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.filmes-tabela {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: pink;
+    color: rgb(255, 84, 112);
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 17px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    
+}
+
+img {
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+a {
+    color: rgb(255, 84, 112);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    .filmes-tabela {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    img {
+        width: 90%;
+        height: auto;
+    }
+}
+
+    </style>
+</head>
+<body>
+      <header>
+        <h1>Bem-vindo à Minha Página</h1>
+        <p>Olá! Meu nome é Letícia, e nessa página coloquei alguns dos meus filmes favoritos.</p>
+    </header>
+    <section>
+        <h2>Meus Filmes Favoritos</h2>
+        <ul class="filmes-lista">
+            <li>Enrolados</li>
+            <li>Barbie: moda e magia</li>
+            <li>Saga: Harry Potter</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Tabela de Filmes</h2>
+        <div class="filmes-tabela">
+            <table>
+                <tr>
+                    <th>Título</th>
+                    <th>Ano de Lançamento</th>
+                    <th>Ator Principal</th>
+                </tr>
+                <tr>
+                    <td>Enrolados</td>
+                    <td>2011</td>
+                    <td>Rapunzel e José</td>
+                </tr>
+                <tr>
+                    <td>Barbie: moda e magia</td>
+                    <td>2010</td>
+                    <td>Barbie</td>
+                </tr>
+                <tr>
+                    <td>Saga: Harry Potter</td>
+                    <td>2001-2011</td>
+                    <td>Harry, Hermione e Ron</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section>
+        <h2>Fale qual o seu também!!</h2>
+        <form>
+            <label for="nome">Seu nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome"><br>
+
+            <label for="filme">Seu filme favorito:</label>
+            <input type="filme" id="filme" name="filme" placeholder="Digite seu filme favorito"><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section>
+        <h2> Imagem dos meus filmes favoritos: </h2>
+        <img src="https://cinebuzz.com.br/media/_versions/harry_potter_3_WumwIEd_widelg.jpg" alt="Imagem Exemplo" width="400">
+        <img src="https://img.elo7.com.br/product/zoom/25419C5/projeto-proshow-producer-rapunzel-enrolados-30-fotos-projeto.jpg" alt="Imagem Exemplo" width="400">
+        <img src="https://play-lh.googleusercontent.com/proxy/aJPOJvmKcrlUOTooZJ7mSdYxP4oue6aCGCc2H9VjbB5BKqR-ZqfT6h82vs0J45Q6eVYjcLF7a-d9KA7j5JkcHTX1Wlie0rB2wp9CSRPqIsKiJlE3wAuD-ks=s1920-w1920-h1080" alt="Imagem Exemplo" width="400">
+
+        <p>Veja mais sobre filmes <a href="https://www.imdb.com/" target="_blank">aqui</a>.</p>
+    </section>
+
+</body>
+</html>
